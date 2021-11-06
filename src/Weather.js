@@ -27,7 +27,7 @@ export default function Weather() {
     function updateCity(event) {
         setCity(event.target.value);
   }
-
+  
   return (
     <div className="Weather">
         <div className="container">
@@ -35,10 +35,10 @@ export default function Weather() {
                 <div className="weather-app">
                     <form class="row" onSubmit={handleSubmit}>
                         <div class="col-sm col-md mb-2">
-                            <input type="search" className="form-control" autocomplete="off" placeholder="Enter a city..." onChange={updateCity} />
+                            <input type="search" className="form-control" placeholder="Enter a city..." onChange={updateCity} />
                         </div>
                         <div class="col-sm col-md">
-                            <input type="submit" value="Search" className="btn btn-light w-100 mb-3" />
+                            <input type="submit" value="Search" className="btn btn-dark w-100 mb-3" />
                         </div>
                     </form>
                     <div className="overview">
